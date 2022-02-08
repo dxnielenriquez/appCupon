@@ -1,0 +1,60 @@
+<ion-content class="background-image" >
+
+<ion-header class="ion-no-border">
+  <ion-toolbar color='#145DA0'>
+    <ion-title  class="titulo">Smart Commerce</ion-title>
+    <ion-buttons  slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="bordered" routerLink="/search">
+        <ion-icon name="search-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- MENU DESLIZABLE-->
+<ion-toolbar color='#145DA0'>
+  <ion-segment
+    (ionChange)="segmentChanged($event)"
+    scrollable="true"
+    [value]="valueSelected"
+  >
+    <ion-segment-button value="inicio">
+      <ion-label>Historial de ventas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tiendas">
+      <ion-label>Afiliados</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="hot">
+      <ion-label>Hot</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="promociones">
+      <ion-label>Promociones</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<!-- VENTANAS -->
+<ion-content>
+  <div class="inicio" *ngIf="valueSelected === 'inicio'">
+    <app-cards [info]="cupones"></app-cards>
+  </div>
+
+  <div *ngIf="valueSelected === 'tiendas'">
+    <app-cards-simples [info]="tiendas"></app-cards-simples>
+  </div>
+
+  <div *ngIf="valueSelected === 'hot'">
+    <app-cards-list [info]="cupones"></app-cards-list>
+  </div>
+
+  <div *ngIf="valueSelected === 'promociones'">
+    <app-cards-promociones [info]="promociones"></app-cards-promociones>
+  </div>
+
+  <!-- <ion-input [(ngModel)]="prueba.nombre" name="nombre" placeholder="Nombre"></ion-input>
+  <ion-input [(ngModel)]="prueba.apellidos" name="apellidos" placeholder="Apellidos"></ion-input>
+  <ion-button color="primary" (click)="create()">Primary</ion-button> -->
+</ion-content>

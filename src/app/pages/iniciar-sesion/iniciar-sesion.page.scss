@@ -1,0 +1,77 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'segoeui';
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 25%;
+    font-family: 'segoeui';
+
+
+}
+
+app-input {
+    color: #080404;
+    --background: #be7c18;
+}
+
+form {
+    margin-top: 4rem;
+    color: #b91a1a;
+
+
+}
+    .forgot-password-link {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        font-weight: 600;
+        font-size: 14px;
+        color: #1f0a0a;
+        
+    }
+
+
+ion-content {
+    --background: #34b0d2 url('../../../assets/img/ondas.png') no-repeat center top  fixed;
+    color: #000000;
+
+  }
+
+  .avatar{
+    width: 120%;
+}
+
+  img {
+    width: 130x;
+    height: 100px;
+  }
+
+ion-button {
+    margin-top: 3rem;
+    --box-shadow: none;
+    --border-radius: 10px;     
+    height: 48px;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    text-transform: initial;
+    --background: #B1D4E0;
+    margin-left: 29%;
+    font-family: 'segoeui';
+
+
+}
+
+.fecha {
+    color: #939fab;
+    left: 1rem;
+    padding: 0 1rem;
+}
+
