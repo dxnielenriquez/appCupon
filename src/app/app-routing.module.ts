@@ -21,9 +21,20 @@ const routes: Routes = [
   },
   
   {
+    path: 'addempleado',
+    loadChildren: () => import('./pages/addempleado/addempleado.module').then( m => m.AddempleadoPageModule)
+  },
+
+  {
+    path: 'editempleado',
+    loadChildren: () => import('./pages/editempleado/editempleado.module').then( m => m.EditempleadoPageModule)
+  },
+
+  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
+
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
@@ -39,6 +50,14 @@ const routes: Routes = [
   {
     path: 'empleadoinfo',
     loadChildren: () => import('./pages/empleadoinfo/empleadoinfo.module').then( m => m.EmpleadoinfoPageModule)
+  },
+  {
+    path: 'empresa',
+    loadChildren: () => import('./pages/empresa/empresa.module').then( m => m.EmpresaPageModule)
+  },
+  {
+    path: 'editarempresa',
+    loadChildren: () => import('./pages/editarempresa/editarempresa.module').then( m => m.EditarempresaPageModule)
   },
   {
     path: 'search',

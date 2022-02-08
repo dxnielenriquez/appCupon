@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EditarperfilPageRoutingModule } from './editarperfil-routing.module';
+import { EditarempresaPageRoutingModule } from './editarempresa-routing.module';
 
-import { EditarperfilPage } from './editarperfil.page';
+import { EditarempresaPage } from './editarempresa.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    EditarperfilPageRoutingModule,
+    EditarempresaPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [EditarperfilPage]
+  declarations: [EditarempresaPage]
 })
-export class EditarperfilPageModule {}
+export class EditarempresaPageModule {}

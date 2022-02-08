@@ -2,7 +2,7 @@
 
   <ion-header class="ion-no-border">
     <ion-toolbar color="primary">
-      <ion-title>Editar Perfíl</ion-title>
+      <ion-title>Editar Empleado</ion-title>
       <ion-buttons  slot="start">
         <ion-menu-button menu="main-menu"></ion-menu-button>
       </ion-buttons>
@@ -13,12 +13,11 @@
 <ion-content class="ion-padding">
 
   <form class="formulario">
-    <app-input label="Nombre"></app-input>
+    <app-input label="Nombre" type="text"></app-input>
     <app-input label="Apellidos" type="text"></app-input>
     <app-input label="Telefono" type="number"></app-input>
-    <app-input label="Confirmar contraseña" type="password"></app-input>
-    <app-input label="Correo electronico" type="email"></app-input>
+    <app-input label="Sueldo" type="number"></app-input>
     </form>
-    <ion-button expand="round" shape="round" routerLink="/perfil">Guardar </ion-button>
+    <ion-button expand="round" shape="round" routerLink="/historial">Editar </ion-button>
 
 </ion-content>
