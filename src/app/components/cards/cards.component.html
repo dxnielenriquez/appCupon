@@ -1,133 +1,108 @@
- <!-- <div class="inicio" *ngFor="let titulo of titulos">
-  <ion-title class="titulo-seccion">{{titulo}}</ion-title>
-  <ion-slides [options]="option" class="ion-margin-top">
-    <ion-slide *ngFor="let informacion of info">
-      <ion-card>
-        <img src="{{ informacion.imagen }}" (click)="verImagen(imagen)"/>
-        <ion-card-subtitle color="dark">
-          {{informacion.promocion}}
-        </ion-card-subtitle>
-        <ion-card-content>{{ informacion.fecha }}</ion-card-content>
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
-</div> -->
+<div class="info-perfil">
 
 
 
-
-
-<br />
-<br />
-<h3 class="ion-text-center">Historial de ventas</h3>
- 
-  <div class="info-perfil">
-      
-      
-        
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-chip class="chip">
-              <ion-icon name="search-outline"></ion-icon>
-              
-
-              <ion-input placeholder="Buscar"> 
-              </ion-input>
-              
-              <br />
-
-
-            </ion-chip>
-            
-            <br>  
-      <br />
-          </ion-col>
-          <img src="assets/img/pdf.png" class="pdf">
-          <img src="assets/img/excel.png" class="excel">
-
-
-        </ion-row>
-      </ion-grid>
-      <br>  
-      <br />
-      <ion-button expand="round" shape="round" routerLink="/editarp">Agregar venta </ion-button>
-
-<br>  
-      <br />
-      <br>  
-      <br />
-
-      <ion-item color="primary">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <br>
         <br />
+        <br>
         <br />
-        <br />
-        
-        <ion-label >
-          <ion-grid>
-            <ion-row class="ion-align-items-start">
-              <ion-col>
-                <div>Día</div>
-              </ion-col>
-              <ion-col>
-                <div>Producto</div>
-              </ion-col>
-              <ion-col>
-                <div>Cantidad</div>
-              </ion-col>
-              <ion-col>
-                <div>Precio</div>
-              </ion-col>
-            </ion-row>
+
+        <ion-chip class="chip">
+          <ion-icon name="search-outline"></ion-icon>
+
+
+          <ion-input placeholder="Buscar">
+          </ion-input>
+        </ion-chip>
+
+
+      </ion-col>
+      <img src="assets/img/pdf.png" class="pdf">
+      <img src="assets/img/excel.png" class="excel">
+
+
+    </ion-row>
+  </ion-grid>
+  <br>
+  <br />
+  <ion-button expand="round" shape="round" routerLink="/addempleado">Agregar</ion-button>
+
+  <br>
+  <br />
+  <br>
+  <br />
+  <div class="tabla">
+    <ion-item color="primary">
+      <br />
+      <br />
+      <br />
+      <ion-label>
+        <ion-grid>
+          <ion-row class="ion-align-items-start">
+            <ion-col>
+              <div>Día</div>
+            </ion-col>
+            <ion-col>
+              <div>Producto</div>
+            </ion-col>
+            <ion-col>
+              <div>Cantidad</div>
+            </ion-col>
+            <ion-col>
+              <div>Precio</div>
+            </ion-col>
+          </ion-row>
           <!-- </ion-grid>
-          <ion-grid> -->
-            <ion-row class="ion-align-items-start">
-              <ion-col>
-                <div>14/09/22</div>
-              </ion-col>
-              <ion-col>
-                <div>Cinturones</div>
-              </ion-col>
-              <ion-col>
-                <div>15</div>
-              </ion-col>
-              <ion-col>
-                <div>$150</div>
-              </ion-col>
-            </ion-row>
-    
-            <ion-row class="ion-align-items-start">
-              <ion-col>
-                <div>14/09/22</div>
-              </ion-col>
-              <ion-col>
-                <div>Cinturones</div>
-              </ion-col>
-              <ion-col>
-                <div>15</div>
-              </ion-col>
-              <ion-col>
-                <div>$150</div>
-              </ion-col>
-            </ion-row>
-    
-            <ion-row class="ion-align-items-start">
-              <ion-col>
-                <div>14/09/22</div>
-              </ion-col>
-              <ion-col>
-                <div>Cinturones</div>
-              </ion-col>
-              <ion-col>
-                <div>15</div>
-              </ion-col>
-              <ion-col>
-                <div>$150</div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-label>
-      </ion-item>
+      <ion-grid> -->
+          <ion-row class="ion-align-items-start">
+            <ion-col>
+              <div>14/09/22</div>
+            </ion-col>
+            <ion-col>
+              <div>Cinturones</div>
+            </ion-col>
+            <ion-col>
+              <div>15</div>
+            </ion-col>
+            <ion-col>
+              <div>$150</div>
+            </ion-col>
+          </ion-row>
 
+          <ion-row class="ion-align-items-start">
+            <ion-col>
+              <div>14/09/22</div>
+            </ion-col>
+            <ion-col>
+              <div>Cinturones</div>
+            </ion-col>
+            <ion-col>
+              <div>15</div>
+            </ion-col>
+            <ion-col>
+              <div>$150</div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="ion-align-items-start">
+            <ion-col>
+              <div>14/09/22</div>
+            </ion-col>
+            <ion-col>
+              <div>Cinturones</div>
+            </ion-col>
+            <ion-col>
+              <div>15</div>
+            </ion-col>
+            <ion-col>
+              <div>$150</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
   </div>
-
+</div>

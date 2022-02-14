@@ -1,29 +1,31 @@
-<ion-content class="background-image" >
+<ion-content class="background-image">
 
   <ion-header class="ion-no-border">
-  <ion-toolbar color='#145DA0'>
-    <ion-buttons slot="start">
-      <ion-back-button text="Regresar" defaultHref="/login" mode="ios"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>  </ion-header>
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+        <ion-back-button text="Regresar" defaultHref="/login" mode="ios"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
   <ion-content class="ion-padding">
 
     <h1>Iniciar Sesión</h1>
-  
-  <div class="text-center" >
-    <img alt="homepage" class="avatar" src="assets/img/profile.svg">
-  </div>
-  
-  <form>
-    
-    <app-input color='#000000' label="Correo" type="email"></app-input>
-    <app-input  label="Contraseña" type="password"></app-input>
-  
-  </form>
+
+    <div class="text-center">
+      <img alt="homepage" class="avatar" src="assets/img/profile.svg">
+    </div>
+
+    <form>
+
+      <app-input color='#000000' label="Correo" tipo="email"></app-input>
+      <app-input label="Contraseña" tipo="password"></app-input>
+
+    </form>
     <ion-button expand="round" shape="round" routerLink="/home">Iniciar sesión</ion-button>
     <br />
-    <ion-checkbox  > </ion-checkbox> <h5>Recordar</h5>
+    <ion-checkbox> </ion-checkbox>
+    <h5>Recordar</h5>
 
   </ion-content>
 </ion-content>

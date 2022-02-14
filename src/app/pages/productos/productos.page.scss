@@ -1,9 +1,3 @@
-ion-content {
-  --background: #34b0d2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
-  color: #000000;
-
-}
-
 .chip {
   width: 200px;
   height: 38px;
@@ -21,12 +15,7 @@ ion-content {
 
 }
 
-ion-col>div {
-  background-color: #ffffff00;
-  border: solid 1px rgba(5, 5, 5, 0);
-  padding: px;
 
-}
 
 .pdf {
   font-size: small;
@@ -54,4 +43,10 @@ ion-col>div {
 
 .trash {
   color: #295896;
+}
+
+ion-content {
+  --background: #34B0D2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
+
+
 }

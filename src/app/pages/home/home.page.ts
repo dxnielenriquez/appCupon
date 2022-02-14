@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { PruebaModule } from 'src/app/modules/prueba/prueba.module';
-import { PruebaService } from 'src/app/services/prueba.service';
+
 
 @Component({
   selector: 'app-home',
@@ -9,37 +8,15 @@ import { PruebaService } from 'src/app/services/prueba.service';
 })
 export class HomePage {
 
-  valueSelected:string = "inicio";
-  prueba: PruebaModule = new PruebaModule();
+  valueSelected: string = "inicio";
 
   segmentChanged(event: CustomEvent) {
     this.valueSelected = event.detail.value;
-    console.log(event.detail.value);
+
   }
 
-  constructor(private service: PruebaService) {
-    service.get().subscribe(
-      resp => {
-        console.log(resp);
-        
-      }, error => {
-        console.log(error);
-        
-      }
-    )
-  }
 
-  create() {
-    this.service.post(this.prueba).subscribe(
-      resp => {
-        console.log(resp);
-        
-      }, error => {
-        console.log(error);
-        
-      }
-    )
-  }
+
 
   tiendas = [
     {
@@ -72,7 +49,7 @@ export class HomePage {
     {
       src: 'assets/img/palacio.png',
       titulo: 'Una tienda'
-    }  
+    }
   ]
 
   cupones = [
@@ -125,5 +102,5 @@ export class HomePage {
       fecha: '20 de May hasta 20 de Sep'
     }
   ];
-  
+
 }

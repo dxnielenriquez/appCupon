@@ -12,22 +12,5 @@ export class HistorialPage implements OnInit {
   ngOnInit() {
   }
 
-  historial = [
-    {
-      cupon: 'Desayuno gratis',
-      tienda: 'Vips',
-      fecha: '15-05-2021'
-    },
-    {
-      cupon: 'Desayuno gratis',
-      tienda: 'Vips',
-      fecha: '15-05-2021'
-    },
-    {
-      cupon: 'Desayuno gratis',
-      tienda: 'Vips',
-      fecha: '15-05-2021'
-    },
-  ]
 
 }
