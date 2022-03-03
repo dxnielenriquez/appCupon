@@ -27,6 +27,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registroqr/registroqr.module').then(m => m.RegistroqrPageModule)
   },
 
+    {
+    path: 'recomendaciones',
+    loadChildren: () => import('./pages/recomendaciones/recomendaciones.module').then(m => m.RecomendacionesPageModule)
+  },
+
+
   {
     path: 'productoinfo',
     loadChildren: () => import('./pages/productoinfo/productoinfo.module').then(m => m.productoinfoPageModule)

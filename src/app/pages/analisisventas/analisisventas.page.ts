@@ -20,9 +20,12 @@ export class AnalisisventasPage implements AfterViewInit {
 
   // When we try to call our chart to initialize methods in ngOnInit() it shows an error nativeElement of undefined. 
   // So, we need to call all chart methods in ngAfterViewInit() where @ViewChild and @ViewChildren will be resolved.
+
+
   ngAfterViewInit() {
     this.barChartMethod();
   }
+
 
   barChartMethod() {
     // Now we need to supply a Chart element reference with an object that defines the type of chart we want to use, and the type of data we want to display.
@@ -63,5 +66,6 @@ export class AnalisisventasPage implements AfterViewInit {
       }
     });
   }
+
 
 }
